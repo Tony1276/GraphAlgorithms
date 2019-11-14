@@ -69,8 +69,8 @@ public class ProblemA {
 	}
 
 	/**
-	 * Returns the number of routes between two stations for all pairs of stations,
-	 * as described in the assignment spec.
+	 * Returns the number of routes between two stations for all pairs of stations.
+	 * This implementation is using the Floyd Warshall all-paths algorithm.
 	 */
 
 	
@@ -94,8 +94,8 @@ public class ProblemA {
 
 
 		for(String intermediateStations: stationList.keySet()){
-            for(String startingStation: stationList.keySet()){
-                for(String endingStation: stationList.keySet()){
+            		for(String startingStation: stationList.keySet()){
+                		for(String endingStation: stationList.keySet()){
 					allPaths.get(startingStation).put(endingStation, allPaths.get(startingStation).get(endingStation)
 					 + allPaths.get(startingStation).get(intermediateStations) 
 					 * allPaths.get(intermediateStations).get(endingStation));
