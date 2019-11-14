@@ -128,12 +128,11 @@ public class ProblemA {
 
 
 		
-		//System.out.println(allPaths);
+		System.out.println(allPaths);
 		return allPaths;
 	}
 }
-		 /* INSERT YOUR CODE HERE
-		 */
+		 
 	
 		
 	
